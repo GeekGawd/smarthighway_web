@@ -22,7 +22,9 @@ if(isset($_POST['btnSubmit'])){
 
         if($run){
             // echo "form submitted successfully";
-            header("location:tolling.php");
+            // header("location:registration.php");
+            // echo 'alert("Registration successful")';
+            echo "<script>alert('Vehicle Registration successful');</script>";
 
         }
         else{

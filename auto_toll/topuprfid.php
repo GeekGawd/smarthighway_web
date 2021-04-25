@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>rfid TopUp</title>
     <style>
         body{
             background:-webkit-linear-gradient(left, #96fa96, #d8c071);
@@ -72,10 +72,10 @@
     </style>
 </head>
 <body>
-    <form action="loginsystem.php" method="POST">
+    <form action="recharge.php" method="POST">
     <div class="contact-image">
                 <img src="rocket_contact.png" alt="rocket_contact"/>
-                <h2>Highway Authority Login</h2>
+                <h2>Top Up vehicle's RFID Card</h2>
             </div>
         
         <?php
@@ -83,13 +83,13 @@
             <p class="error"><?php echo $_GET['error'] ; ?></p>
         <?php } ?>
         
-        <label for="">User Name</label>
-        <input type="text" name="username" placeholder="UserName"><br>
+        <label for="">RFID card Number :</label>
+        <input type="text" name="rfidnumber" placeholder="Unique RFID"><br>
 
-        <label for="">Password</label>
-        <input type="password" name="password" placeholder="Password"><br>
+        <label for="">Amount :</label>
+        <input type="text" name="amountcredit" placeholder="Amount to be credited"><br>
 
-        <button type="submit">Login</button>
+        <button name="btnSubmit" type="submit">Recharge</button>
     </form>
     
 </body>

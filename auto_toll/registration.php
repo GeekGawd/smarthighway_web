@@ -72,23 +72,23 @@ h1{
 }
 .regisbtn{
     float:right;
-    margin-top:-6%;
-    margin-right:-0.8%;
+    margin-top:2%;
+    margin-right:0.7%;
     /* width:9%; */
   }
   .regisbtn1{
     
     float:right;
-    margin-top:-6%;
-    margin-right:-8%;
+    margin-top:2%;
+    margin-right:2%;
     /* width:9%; */
   }
   .contact-image{
     text-align: center;
 }
-.contact-image{
+  .contact-image{
     /* border-radius: 6rem; */
-    width: 80px;
+    width: 100px;
     margin-top: 20px;
     /* transform: rotate(-29deg); */
 }
@@ -97,14 +97,16 @@ h1{
 </head>
 
 <body>
+<a href="login.php"> <button type="button" class="btn btn-danger regisbtn1" >Logout</button></a>
+<a href="tolling.php"> <button type="button" class="btn btn-success regisbtn" >Back to Portal</button></a>
+        
 
     <div class="container">
     
                 <img class="contact-image" src="rocket_contact.png" alt="rocket_contact"/>
                 <h1>Register Your Vehicle Here</h1>
             
-        <a href="tolling.php"> <button type="button" class="btn btn-success regisbtn" >Back to Portal</button></a>
-        <a href="login.php"> <button type="button" class="btn btn-danger regisbtn1" >Logout</button></a>
+        
   
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -113,8 +115,9 @@ h1{
 
 <div class="container contact-form">
                <div class="row">
+               
                     <div class="col-md-6">
-                      <form action="register.php" method="POST">
+                    <form action="register.php" method="POST">
                         <div class="form-group">
                             <input type="text" name="vehicle_no" class="form-control" placeholder="Vehicle No. *" value="" />
                         </div>
@@ -124,6 +127,8 @@ h1{
                         <div class="form-group">
                             <input type="text" name="owner_name" class="form-control" placeholder="Owner Name *" value="" />
                         </div>
+                    </div>
+                    <div class="col-md-6" style="margin-top:73px">
                         <div class="form-group">
                             <input type="text" name="owner_contact" class="form-control" placeholder="Owner Contact *" value="" />
                         </div>
@@ -139,13 +144,18 @@ h1{
                         <div class="form-group">
                             <input type="submit" name="btnSubmit" class="btnContact" value="Register" />
                         </div>
-                        </form>
+                        
                     </div>
                     
                   </div>
+                  </form>
               </div>
-              </div>            
-                
+</div>
+
+
+                    
+                         
+
 
 
      
